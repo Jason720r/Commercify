@@ -1,18 +1,23 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
 
+
 export const NavBar = () => {
     const navigate = useNavigate()
     return (
         <ul className="navbar">
             <li className="navbar__item">
-                Products
+            <Link className="nav-link" to="/products">
+            <i className="fas fa-home"></i>
+            <div className="home">Products</div>
+            <span></span>
+        </Link> 
             </li>
             <li className="navbar__item">
-                Navigation link
+                About us
             </li>
             <li className="navbar__item">
-                Navigation link
+                Orders
             </li>
             {
                 (localStorage.getItem("lu_token") !== null) ?
