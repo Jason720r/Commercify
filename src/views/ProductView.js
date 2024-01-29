@@ -1,13 +1,15 @@
 import { Route, Routes } from "react-router-dom"
 import React, { useEffect, useState } from 'react';
 import { productFetch } from "../managers/ProductManager.js";
+import { categoryFetch } from "../managers/CategoryManager.js";
 import "./Product.css"
 
 export const ProductContainer = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProduct] = useState([])
+    const [categories, setCategory] = useState([])
 
     useEffect(() => {
-        productFetch().then(data => setProducts(data));
+        productFetch().then(data => setProduct(data));
     }, [])
 
     return (
