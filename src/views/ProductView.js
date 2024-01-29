@@ -7,7 +7,7 @@ export const ProductContainer = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        productFetch().then(data => setProducts);
+        productFetch().then(data => setProducts(data));
     }, [])
 
     return (
@@ -30,8 +30,8 @@ export const ProductContainer = () => {
                                 <div className="product_type">{product.type}</div>
                                 <div className="product_image">{product.image}</div>
                                 <div className="product_price">{product.price}</div>
-                                <div className="product_delivery">{product.delivery}</div>
-                                <div className="product_stock">{product.stock}</div>
+                                <div className="product_delivery">{product.deliveryTime}</div>
+                                <div className="product_stock">{product.inStock}</div>
                             </section>
                         )
                     })
