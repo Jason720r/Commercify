@@ -12,6 +12,10 @@ export const ProductContainer = () => {
         productFetch().then(data => setProduct(data));
     }, [])
 
+    useEffect(() => {
+        categoryFetch().then(data => setCategory(data));
+    }, [])
+
     return (
         <div className="product-container">
             <div className="product_title">Products</div>
