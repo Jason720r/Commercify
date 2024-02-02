@@ -6,3 +6,7 @@ export const productFetch = () => {
     })
     .then(response => response.json())
 } 
+
+export const productCreate = () => {
+    return fetch
+}
