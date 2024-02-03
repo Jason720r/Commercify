@@ -6,3 +6,7 @@ export const categoryFetch = () => {
     })
     .then(response => response.json())
 }
+
+export const singleCategory = (categoryId) => {
+    return fetch(`http://localhost:8088/products/${categoryId}`,)
+}
