@@ -7,6 +7,15 @@ export const productFetch = () => {
     .then(response => response.json())
 } 
 
+export const singleProduct = (productId) => {
+    return fetch(`http://localhost:8088/products/${productId}`, {
+        headers: {
+            "Authorization": `Token ${localStorage.getItem("lu_token")}`
+        }
+    })
+    .then(response => response.json())
+}
+
 export const productCreate = (product) => {
     return fetch("http://localhost:8088/products", {
         method:"POST",
