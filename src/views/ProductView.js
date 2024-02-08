@@ -21,6 +21,9 @@ export const ProductContainer = () => {
         <div className="home_title">
             Jason's Barbell Apparel
         </div>
+        <div className="home_description">
+            Who we are
+        </div>
         {/* <div className="product-container"> */}
             {/* <div className="product_title">Products</div>
             <div className="product_name">Elmo Male Waitress(used)</div>
