@@ -22,7 +22,7 @@ export const ProductContainer = () => {
             Jason's Barbell Apparel
         </div>
         <div className="home_description">
-            Who we are
+            Promos
         </div>
             <div className="container">
                 {
