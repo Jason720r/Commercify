@@ -7,6 +7,7 @@ import "./Product.css"
 export const ProductContainer = () => {
     const [products, setProduct] = useState([])
     const [categories, setCategory] = useState([])
+    const [advertisements, setAdvertisement] = useState([])
 
     useEffect(() => {
         productFetch().then(data => setProduct(data));
