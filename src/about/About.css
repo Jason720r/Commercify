@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #6a2209; 
+    background-color: #000000; 
     color: #906b6b;
 }
 
@@ -71,28 +71,29 @@ nav a:hover {
     /* border: 1px solid rgb(132, 30, 9); */
 }
 .welcome_box p {
-    text-align: center; /* Centers text horizontally */
+    text-align: center; 
 }
 
 .header_image {
-    width: 100%; /* Makes the image fill the container */
+    width: 100%; 
     max-height: 95vh;
     border-radius: 8px;
 
 }
+
 .scroll_down_indicator {
     position: absolute;
-    bottom: 100px; /* Adjust based on your layout */
+    bottom: 100px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 30px; /* Size of the arrow */
+    width: 30px; 
     height: 30px;
-    font-size: 100px; /* Adjust if you're using a text-based arrow */
-    color: #ffffff; /* Color of the arrow */
+    font-size: 100px; 
+    color: #ffffff; 
 }
 
 .scroll_down_indicator::after {
-    content: '⌄'; /* Simple text-based arrow; consider using an actual arrow icon or SVG for more flexibility */
+    content: '⌄'; 
     display: block;
     text-align: center;
     color: inherit;
@@ -108,13 +109,54 @@ main {
 }
 
 .business_logo {
-    max-height: 60px; /* Adjust based on your preference */
-    width: auto; /* Keeps the aspect ratio intact */
-    vertical-align: middle; /* Helps with vertical centering in some cases */
+    max-height: 60px; 
+    width: auto; 
+    vertical-align: middle; 
 }
 
-/* Section Styling */
-.about_section, .services_section, .booking_section {
+.service_view {
+    position: relative; /* Makes this the reference for absolute positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; 
+}
+
+.services_section {
+    position: absolute;
+    top: 50%; 
+    left: -34%; 
+    transform: translateY(-50%); 
+    width: 74%; 
+    height: 109%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left; 
+    border: 1px solid rgb(132, 30, 9);
+    z-index: 2;
+}
+
+.service_button {
+    background-color: #fdfdfd; /* Light background color */
+    color: #6a2209; /* Text color as specified */
+    border: 2px solid #6a2209; /* Border color to match the text */
+    padding: 10px 20px; /* Adjust padding to your preference */
+    font-size: 16px; /* Adjust font size to your preference */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    margin: 5px; /* Space between buttons and other elements */
+}
+
+.service_button:hover {
+    background-color: #6a2209; /* Button background color on hover */
+    color: #fdfdfd; /* Button text color on hover */
+    border-color: #fdfdfd; /* Optional: Changes border color on hover */
+}
+
+.about_section, .booking_section {
     width: 80%;
     margin: 20px 0;
     text-align: center;
@@ -128,9 +170,13 @@ main {
 }
 
 .book_image {
-    width: 100%; /* Makes the image fill the container */
-    height: auto;
+    width: 110%; /* Ensure the image stretches to cover the container width */
+    max-height: 95vh;
+    position: relative; /* Position it absolutely to fit the container */
+    top: -20px;
+    left: 320px;
     border-radius: 8px;
+    z-index: 1
 }
 
 @media (min-width: 768px) {
@@ -141,9 +187,5 @@ main {
         align-items: center;
     }
 
-    .book_image {
-        margin-left: 20px;
-        margin-top: 0;
-    }
     
 }

@@ -28,19 +28,22 @@ export const ShannonTest = () => {
                 </div>
             </header>
             <main>
+                <div className="service_view">
             <section id="services" className="services_section">
-                    <h2>Services Offered</h2>
-                    <p>Diet and Coaching</p>
-                    <p>Custom programs designed to meet YOUR goals</p>
-                    <p>Muscle building and Weight loss</p>
+                    <h2 className="service_title">Services Offered</h2>
+                    <button className="service_button">Diet and Coaching</button>
+                    <p></p>
+                    <button className="service_button">Custom programs designed to meet YOUR goals</button>
+                    <p></p>
+                    <button className="service_button">Muscle building and weight loss</button>
                 </section>
-                <section id="about" className="about_section">
+                {/* <section id="about" className="about_section">
                     <h2>About Shannon's Business</h2>
                     <p>Here you can add more detailed information about the business, its mission, and what makes it special.</p>
-                </section>
+                </section> */}
                 <div className="booking">
-                    <h2>Book your first session now!</h2>
                     <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGd5bSUyMGVxdWlwbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Landing_image" className="book_image"/>
+                </div>
                 </div>
             </main>
         </div>
