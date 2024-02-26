@@ -1,6 +1,7 @@
 import "./About.css";
 import React from 'react';
 import Logo from './LandingLogo.png'
+import HeaderImage from './Header.jpg'
 
 export const ShannonTest = () => {
 
@@ -16,15 +17,26 @@ export const ShannonTest = () => {
                         <a href="#booking">Book Session</a>
                     </nav>
                 </div>
+                <div className="welcome_view">
+                    <div className="welcome_box">
+                        <p className="text_one">REACH YOUR GOALS</p>
+                        <p className="text_two">SURPASS YOUR LIMITS</p>
+                        <p className="text_three">BEAT YOUR PREVIOUS SELF</p>
+                    </div>
+                <img src={HeaderImage} alt="Header_image" className="header_image"/>
+                <div className="scroll_down_indicator"></div>
+                </div>
             </header>
             <main>
+            <section id="services" className="services_section">
+                    <h2>Services Offered</h2>
+                    <p>Diet and Coaching</p>
+                    <p>Custom programs designed to meet YOUR goals</p>
+                    <p>Muscle building and Weight loss</p>
+                </section>
                 <section id="about" className="about_section">
                     <h2>About Shannon's Business</h2>
                     <p>Here you can add more detailed information about the business, its mission, and what makes it special.</p>
-                </section>
-                <section id="services" className="services_section">
-                    <h2>Our Services</h2>
-                    <p>Detailed information about the services offered.</p>
                 </section>
                 <div className="booking">
                     <h2>Book your first session now!</h2>

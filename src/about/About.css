@@ -1,11 +1,16 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6a2209; 
+    color: #906b6b;
 }
 
 :root {
     --primary-color: #000000; 
-    --secondary-color: #ffffff; 
+    --secondary-color: #fdfdfd; 
 }
 
 .landing_page_container {
@@ -13,12 +18,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: var(--secondary-color);
+    
 }
 
 /* Header styling */
 .landing_page_header {
     background-color: var(--primary-color);
     padding: 20px 0;
+    
 }
 
 .container {
@@ -28,15 +35,67 @@ body {
     padding: 0 10%;
 }
 
+
 /* Navigation Links */
 nav a {
     margin: 0 10px;
     color: var(--secondary-color);
     text-decoration: none;
+    
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+.welcome_view {
+    position: relative; /* Makes this the reference for absolute positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; 
+   
+}
+.welcome_box {
+    position: absolute; 
+    left: 0; 
+    top: 140px; 
+    margin: 10px; 
+    padding: 15px;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: left;
+    width: calc(50% - 40px); 
+    box-sizing: border-box;
+    /* border: 1px solid rgb(132, 30, 9); */
+}
+.welcome_box p {
+    text-align: center; /* Centers text horizontally */
+}
+
+.header_image {
+    width: 100%; /* Makes the image fill the container */
+    max-height: 95vh;
+    border-radius: 8px;
+
+}
+.scroll_down_indicator {
+    position: absolute;
+    bottom: 100px; /* Adjust based on your layout */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px; /* Size of the arrow */
+    height: 30px;
+    font-size: 100px; /* Adjust if you're using a text-based arrow */
+    color: #ffffff; /* Color of the arrow */
+}
+
+.scroll_down_indicator::after {
+    content: '⌄'; /* Simple text-based arrow; consider using an actual arrow icon or SVG for more flexibility */
+    display: block;
+    text-align: center;
+    color: inherit;
 }
 
 /* Main Content Area */
@@ -69,10 +128,9 @@ main {
 }
 
 .book_image {
-    max-width: 100%;
+    width: 100%; /* Makes the image fill the container */
     height: auto;
-    border-radius: 8px; /* Optional: for rounded corners on the image */
-    margin-top: 20px;
+    border-radius: 8px;
 }
 
 @media (min-width: 768px) {
