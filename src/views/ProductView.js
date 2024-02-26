@@ -32,7 +32,7 @@ export const ProductContainer = () => {
                             <section key={`product--${product.id}`} className="product_listing">
                                 <div className="product_name">{product.title}</div>
                                 <div className="product_type">{product.type}</div>
-                                <div className="product_image">{product.image}</div>
+                                <img src={product.image} alt={product.title} className="product_image"/>
                                 <div className="product_price">{product.price}</div>
                                 <div className="product_delivery">{product.deliveryTime}</div>
                                 <div className="product_stock">{product.inStock}</div>
