@@ -14,7 +14,11 @@ export const NavBar = () => {
         </Link> 
             </li>
             <li className="navbar__item">
-                About us
+            <Link className="nav-link" to="/about">
+            <i className="fas fa-home"></i>
+            <div className="home">Shannon Landing Page</div>
+            <span></span>
+        </Link> 
             </li>
             <li className="navbar__item">
                 Orders

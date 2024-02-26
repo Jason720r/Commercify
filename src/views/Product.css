@@ -45,25 +45,26 @@
 }
 
 .product_image {
-    width: 80%;
-    height: auto;
-    background-size: cover;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 
-.sofa {
-    width: 50%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+
 
 .product_price {
     font-size: 1.5em;
 
     color: rgb(40, 167, 61);
     margin-bottom: 15px;
+}
+
+.product_name, .product_type, .product_price, .product_delivery, .product_stock {
+    height: 2em; /* Adjust based on your content */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .btn-add-to-cart {
