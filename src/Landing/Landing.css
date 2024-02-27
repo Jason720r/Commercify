@@ -1,5 +1,89 @@
+/* General styles to ensure margin and padding are reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox for the main container to align items and make it responsive */
+.landing_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the website logo */
 .website_logo {
-    width: 100%; 
-    max-height: 95vh;
-    border-radius: 8px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 100px; /* Adjust based on actual logo size */
+}
+
+/* Navigation styles, positioned at the top-right */
+nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Client container to hold the image and review */
+.client_container {
+    width: 100%;
+    position: relative; /* For absolute positioning of the review inside */
+}
+
+.landing_banner {
+    width: 100%;
+    height: auto; /* Adjust based on your preference */
+}
+
+/* Styling for the client review, ensuring it's readable over the image */
+.client_review {
+    position: absolute;
+    left: 20px;
+    bottom: 20px; /* Adjust as needed */
+    color: white; /* For contrast against potentially dark images */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px;
+    width: 300px; /* Or adjust to fit the text */
+}
+
+/* Description header styling */
+.landing_description {
+    margin: 20px 0;
+    font-size: 24px; /* Or your preferred size */
+    text-align: center;
+}
+
+/* Service button container */
+.service_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling for each service button */
+.service_shannon {
+    background-color: transparent;
+    border: 2px dotted gray; /* Dotted border as requested */
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .client_review {
+        width: auto; /* Ensure it fits on smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        right: 10px; /* Adjust for smaller screens */
+        top: 60px; /* Make room for the stacked nav items */
+    }
 }
