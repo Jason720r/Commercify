@@ -17,6 +17,11 @@ export const LandingPage = () => {
             </div>
             <div className='landing_description'>It's not just about your physical well-being, your mental health is just as important</div>
             <img src={LandingImage} alt="Shannon" className="landing_logo" />
+            <div className='service_container'>
+                <button className='service_shannon'>Diet and Coaching</button>
+                <button className='service_shannon'>Mental Health</button>
+                <button className='service_shannon'></button>
+            </div>
         </div>
     )
 }
