@@ -1,5 +1,6 @@
 import React from 'react';
 import LandingImage from './Shannon.JPG'
+import McLogo from './McClure.png'
 import WebsiteTitle from './Title.png'
 import "./Landing.css";
 
@@ -8,7 +9,7 @@ export const LandingPage = () => {
     return (
         <div className="landing_container">
 
-            <img src={WebsiteTitle} alt="Web Logo" className='website_logo'/>
+            <img src={McLogo} alt="Web Logo" className='website_logo'/>
             <nav>
                 <a href="About">About Me</a>
                 <a href='Contact'>Contact Me</a>
