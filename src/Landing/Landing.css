@@ -12,9 +12,7 @@
     align-items: center;
     width: 100%;
     min-height: 190vh; /* Make sure it covers the full viewport height */
-    background-image: url('./Shannon.JPG'); /* Adjust path as needed */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
+
 }
 
 /* Styling for the website logo */
@@ -22,7 +20,8 @@
     position: absolute;
     left: 40px;
     top: 20px; /* Adjusted from -60px to 20px to bring it into view */
-    width: 100px;
+    width: 250px;
+    z-index: 1;
 }
 
 /* Navigation styles, positioned at the top-right */
