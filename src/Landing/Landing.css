@@ -16,33 +16,55 @@
 }
 
 /* Styling for the website logo */
-.website_logo {
-    position: absolute;
-    left: 40px;
-    top: 20px; /* Adjusted from -60px to 20px to bring it into view */
-    width: 250px;
-    z-index: 1;
-}
 
 /* Navigation styles, positioned at the top-right */
 nav {
-    position: absolute;
-    right: 20px;
-    top: 20px;
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
 }
 
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Adjust color as needed */
+    font-weight: bold;
+    /* If you want the links to be more towards the edges */
+    padding: 0 20px;
+}
+
+nav:first-child, nav:last-child {
+    justify-content: flex-start; /* Aligns first nav to the start */
+}
+
+nav:last-child {
+    justify-content: flex-end; /* Aligns last nav to the end */
+}
 /* Client container to hold the image and review */
 .client_container {
     width: 100%;
     position: relative; /* For absolute positioning of the review inside */
 }
 
-.landing_banner {
+.nav_container {
+    display: flex;
+    justify-content: space-between; /* Aligns items on opposite ends */
+    align-items: center; /* Vertically centers items in the container */
     width: 100%;
-    height: 170vh; /* Adjust based on your preference */
-    border-radius: 8px;
+    padding: 10px 20px; /* Add some padding around the edges */
+    position: absolute; /* Positioning at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.website_logo {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    height: 190px;
+    width: 200px;
+    transform: translateX(-50%); /* Centers the logo exactly */
+    z-index: 1;
 }
 
 /* Styling for the client review, ensuring it's readable over the image */
@@ -58,17 +80,23 @@ nav {
 
 /* Description header styling */
 .landing_description {
+    z-index: 1;
     margin: 20px 0;
     font-size: 24px; /* Or your preferred size */
     text-align: center;
+    position: relative;
+    bottom: 200px;
 }
 
 /* Service button container */
 .service_container {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    position: relative;
+    bottom: 200px;
 }
 
 /* Styling for each service button */
@@ -86,9 +114,12 @@ nav {
         width: auto; /* Ensure it fits on smaller screens */
     }
 
-    nav {
-        flex-direction: column;
-        right: 10px; /* Adjust for smaller screens */
-        top: 60px; /* Make room for the stacked nav items */
-    }
+}
+.landing_banner {
+    position: absolute;
+    width: 50%;
+    height: 100vh; /* Adjust based on your preference */
+    right: -10px;
+    top: 60px;
+    border-radius: 8px;
 }
