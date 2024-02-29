@@ -16,10 +16,11 @@ export const LandingPage = () => {
             </nav>
             <img src={McLogo} alt="Web Logo" className='website_logo'/>
             <nav>
-
+        
             </nav>
             <nav>
-                
+            <a href="About">Services</a>
+                <a href='Contact'>Success Stories</a>
             </nav>
             </div>
             <div className='client_container'>

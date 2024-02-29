@@ -22,13 +22,15 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    padding-top: 80px;
 }
 
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255); /* Adjust color as needed */
     font-weight: bold;
-    /* If you want the links to be more towards the edges */
+    font-family: "Roboto Condensed", sans-serif;
     padding: 0 20px;
 }
 
@@ -60,9 +62,9 @@ nav:last-child {
 .website_logo {
     position: absolute;
     left: 50%;
-    top: 20px;
-    height: 190px;
-    width: 200px;
+    top: -7px;
+    height: 220px;
+    width: 300px;
     transform: translateX(-50%); /* Centers the logo exactly */
     z-index: 1;
 }
