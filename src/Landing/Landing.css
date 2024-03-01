@@ -59,6 +59,7 @@ nav:last-child {
     left: 0;
     right: 0;
     z-index: 10;
+    
 }
 .website_logo {
     position: absolute;
@@ -149,4 +150,14 @@ nav:last-child {
     right: -10px;
     top: 60px;
     border-radius: 8px;
+}
+.scroll_down_indicator {
+    position: absolute;
+    bottom: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px; 
+    height: 30px;
+    font-size: 100px; 
+    color: #ffffff; 
 }

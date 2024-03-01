@@ -81,16 +81,6 @@ nav a:hover {
 
 }
 
-.scroll_down_indicator {
-    position: absolute;
-    bottom: 100px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px; 
-    height: 30px;
-    font-size: 100px; 
-    color: #ffffff; 
-}
 
 .scroll_down_indicator::after {
     content: '⌄'; 
