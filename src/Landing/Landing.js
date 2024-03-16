@@ -3,6 +3,7 @@ import LandingImage from './Shannon.JPG';
 import McLogo from './McClure.png';
 import NoBackground from './Background.png';
 import WebsiteTitle from './Title.png';
+import Kettle from './Bell.jpg';
 import "./Landing.css";
 
 export const LandingPage = () => {
@@ -32,6 +33,7 @@ export const LandingPage = () => {
             <div className='landing_description'>Whether it be diet, coaching, or trauma, I'm here to support you through every step of your journey. Your body and mind are interconnected, and achieving balance between them is crucial for overall health. My approach is holistic, focusing on nutrition, exercise, and mental resilience to empower you to overcome challenges. Together, we'll develop a personalized plan that fits your lifestyle and goals, ensuring that you feel supported, motivated, and confident in your abilities. </div>
             </div>
             <div className="scroll_down_indicator"></div>
+            <img src={Kettle} alt="Bell" className='kettle_image' />
             <div className='service_container'>
                 <button className='service_shannon'>Diet and Coaching</button>
                 <button className='service_shannon'>Mental Health</button>
