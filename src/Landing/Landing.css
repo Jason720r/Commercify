@@ -161,3 +161,12 @@ nav:last-child {
     font-size: 100px; 
     color: #ffffff; 
 }
+
+.kettle_image {
+    position: absolute;
+    width: 60%;
+    height: 80vh; /* Adjust based on your preference */
+    right: 10px;
+    bottom: -1000px;
+    border-radius: 8px;
+}
