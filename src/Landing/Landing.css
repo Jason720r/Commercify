@@ -162,6 +162,26 @@ nav:last-child {
     color: #ffffff; 
 }
 
+
+/* Styling buttons to have a black background and white text */
+.contact_container button {
+    position: absolute;
+    background-color: black; /* Button background */
+    color: white; /* Button text color */
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 25px; /* Or your preferred size */
+    left: 40%;
+    bottom: -160px;
+    cursor: pointer; /* Changes cursor to pointer on hover for better user experience */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border: 1px solid white; /* Adds a thin white border */
+    padding: 10px 20px;
+}
+
+.contact_container button:hover {
+    background-color: #333; /* Slightly lighter black for hover effect */
+}
+
 .kettle_image {
     position: absolute;
     width: 60%;
